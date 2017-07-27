@@ -16,6 +16,5 @@ import static java.util.concurrent.TimeUnit.SECONDS;
 public class Waitings {
 
     public static void main(String[] args) {
-
     }
 }
