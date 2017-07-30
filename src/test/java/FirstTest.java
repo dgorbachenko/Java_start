@@ -30,6 +30,7 @@ public class FirstTest {
 
     public static void main(String[] args) throws MalformedURLException {
 
+
         if (platform.equals(Platform.IOS)) {
             File classPathRoot = new File(System.getProperty("user.dir"));
             File appDir = new File(classPathRoot, "/app/iOS");
