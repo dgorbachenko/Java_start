@@ -19,7 +19,7 @@ import static java.util.concurrent.TimeUnit.SECONDS;
 public class FirstTest {
 
     public static AppiumDriver<MobileElement> driver;
-    protected static Platform platform = Platform.IOS;
+    protected static Platform platform = Platform.ANDROID;
     protected static MobileElement searchField;
 
 
