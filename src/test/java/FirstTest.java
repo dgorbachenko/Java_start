@@ -23,6 +23,7 @@ public class FirstTest {
     protected static MobileElement searchField;
 
 
+
     enum Platform {
         ANDROID,
         IOS
