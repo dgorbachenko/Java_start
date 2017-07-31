@@ -78,6 +78,7 @@ public class FirstTest {
             // my code
         }
 
+
         List<MobileElement> name = driver.findElements(By.id("name"));
         Assert.assertEquals(name.size(), 1);
 
