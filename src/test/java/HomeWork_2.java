@@ -38,10 +38,10 @@ public class HomeWork_2 {
 
 
         /**Home_work 1 test**/
-//        List<MobileElement> contacsNameFirst = driver.findElements(By.id("name"));
-//        for (MobileElement element : contacsNameFirst) {
-//            element.click();
-//        }
+        List<MobileElement> contacsNameFirst = driver.findElements(By.id("name"));
+        for (MobileElement element : contacsNameFirst) {
+            element.click();
+        }
 
         /**Home_work 2 test. Проверить что информация отображена корректно, использовав className, id и xpath.*/
 
@@ -52,7 +52,6 @@ public class HomeWork_2 {
         search.setValue("12345");
         driver.findElement(By.id("main_text"));
         System.out.println("Ошибка");
-
     }
 
 }
