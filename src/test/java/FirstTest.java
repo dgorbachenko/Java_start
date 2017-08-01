@@ -23,7 +23,6 @@ public class FirstTest {
     protected static MobileElement searchField;
 
 
-
     enum Platform {
         ANDROID,
         IOS
@@ -63,22 +62,18 @@ public class FirstTest {
             driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), desiredCapabilities);
         }
 
-
         if (platform.equals(Platform.ANDROID)) {
             searchField = driver.findElement(By.id("main_search"));
         } else {
             searchField = driver.findElement(By.id("ID_ON_IOS"));
         }
         searchField.setValue("Joy S");
-
         try {
-            Thread.sleep(3000);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
             // my code
         }
-
-
         List<MobileElement> name = driver.findElements(By.id("name"));
         Assert.assertEquals(name.size(), 1);
 
@@ -88,9 +83,9 @@ public class FirstTest {
                 element.click();
             }
         }
-
         driver.findElement(By.xpath("//*[@resource-id='android:id/content']//android.widget.ImageView"));
         driver.findElement(By.className("android.widget.ImageView"));
+
     }
 }
 
