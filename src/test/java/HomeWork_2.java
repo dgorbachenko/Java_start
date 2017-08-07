@@ -41,17 +41,19 @@ public class HomeWork_2 {
         List<MobileElement> contacsNameFirst = driver.findElements(By.id("name"));
         for (MobileElement element : contacsNameFirst) {
             element.click();
+            driver.navigate().back();
         }
 
         /**Home_work 2 test. Проверить что информация отображена корректно, использовав className, id и xpath.*/
 
-
+//
+//
         /**Home_work 3 test. Протестировать поле поиска - один позитивный и один негативный сценарии.*/
 
         MobileElement search = driver.findElement(By.id("main_search")); // негативный кейс
         search.setValue("12345");
         driver.findElement(By.id("main_text"));
-        System.out.println("Ошибка");
+        System.out.println("Eror");
     }
 
 }
